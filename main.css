@@ -1,0 +1,254 @@
+/*================Resets==============*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Roboto' sans-serif;
+  background-color: black;
+  overflow-x: hidden;
+  color: white; }
+
+ul {
+  list-style: none;
+  color: #fff; }
+
+li {
+  color: #fff; }
+
+img {
+  max-width: 100%; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
+
+button {
+  color: #fff; }
+
+/*================Global Classes==============*/
+.container {
+  width: 80%;
+  margin: 0 auto;
+  color: #fff; }
+
+.row {
+  display: flex; }
+
+.center {
+  justify-content: center; }
+
+.column {
+  display: flex;
+  flex-direction: column; }
+
+.split {
+  justify-content: space-between; }
+
+.column-center {
+  align-items: center; }
+
+.row-reverse {
+  flex-direction: row-reverse; }
+
+.centerHold {
+  align-items: center;
+  align-content: center; }
+
+.bottom {
+  align-items: flex-end; }
+
+.col1-3 {
+  width: 33.333%; }
+
+/*================Page Styles==============*/
+/* NAV BAR */
+.header-img {
+  position: relative; }
+
+.header-img ul {
+  font-size: .80em;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-top: 20px; }
+  .header-img ul li {
+    padding: 0 10px;
+    letter-spacing: .7px;
+    margin-right: 20px; }
+    .header-img ul li:last-child {
+      margin-right: 0; }
+
+.cart {
+  font-size: .85em;
+  position: absolute;
+  right: 20px;
+  bottom: 0; }
+  .cart a {
+    margin-right: 4px; }
+  .cart img {
+    height: 10px;
+    width: 15px; }
+
+/* END NAV BAR */
+/* SPLASH IMAGE*/
+.splash-wrap {
+  height: 530px; }
+  .splash-wrap .shop button {
+    margin-top: 250px;
+    background: #434343;
+    height: 35px;
+    width: 85px;
+    border: none;
+    text-transform: capitalize;
+    border-radius: 2px;
+    font-weight: 400;
+    font-size: .65em; }
+    .splash-wrap .shop button:hover {
+      background: #505050; }
+
+.splash-img {
+  background: url(img/Hipster3.jpeg) no-repeat top;
+  background-size: cover;
+  height: 700px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  margin-top: 20%; }
+
+.cta {
+  background-color: rgba(47, 47, 50, 0.7);
+  font-family: 'Lobster Two', cursive;
+  width: 100vw;
+  margin-top: 200px; }
+  .cta span {
+    color: #fff;
+    font-size: 7.5em; }
+  .cta ul {
+    text-transform: uppercase;
+    margin-bottom: 20px; }
+    .cta ul li {
+      margin-right: 30px;
+      font-size: 1.3em;
+      color: #fff; }
+
+/* END SPLASH CONTENT */
+/* MAIN CONTENT */
+.main-content {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #1B1B1B;
+  width: 100%;
+  margin-left: 0;
+  color: #fff;
+  font-family: 'Hind', sans-serif; }
+  .main-content h1 {
+    padding-top: 20px;
+    font-weight: 200; }
+  .main-content h3 {
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-weight: 200;
+    color: #6C6C6C; }
+  .main-content ul {
+    margin-bottom: 10px;
+    text-align: center; }
+    .main-content ul li {
+      font-size: .8em;
+      width: 100%;
+      color: #6C6C6C; }
+
+/*END MAIN CONTENT*/
+/*SHOP CONTENT*/
+.s-content {
+  background-color: #272727; }
+  .s-content h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top: 100px;
+    padding-bottom: 40px; }
+
+.img-wrap {
+  font: 'Hind', sans-serif;
+  background-color: #272727; }
+  .img-wrap > div {
+    max-width: 21%;
+    margin-right: 1%; }
+    .img-wrap > div:last-child {
+      margin-right: 0; }
+    .img-wrap > div img:hover {
+      opacity: .8; }
+
+.img-content1 ul li {
+  text-align: center;
+  padding: 5px 0;
+  font-family: 'Hind', sans-serif;
+  text-transform: uppercase;
+  font-weight: 300; }
+
+/*END SHOP CONTENT*/
+/*INSTAGRAM CONTENT*/
+.img-outer {
+  background-color: #1B1B1B; }
+
+.img-inner {
+  margin: 0 auto;
+  width: 95%; }
+
+.ig-content {
+  background-color: #1B1B1B; }
+  .ig-content h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-top: 70px;
+    padding-bottom: 50px; }
+
+.ig-wrap {
+  background-color: #1B1B1B;
+  height: 150px;
+  margin-bottom: 15px; }
+  .ig-wrap:last-child {
+    margin-bottom: 0; }
+  .ig-wrap > img {
+    max-width: 15%;
+    margin-right: 1.4%; }
+    .ig-wrap > img:last-child {
+      margin-right: 0; }
+
+/*END INSTAGRAM CONTENT*/
+footer {
+  padding-top: 40px;
+  background-color: #111;
+  font: 'Hind', sans-serif; }
+  footer h3 {
+    margin-bottom: 15px;
+    font: 'Hind', sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+    text-transform: uppercase; }
+  footer .footer-outer {
+    width: 60%;
+    margin: 0 auto;
+    font-size: .85em; }
+    footer .footer-outer .subscribe > * {
+      margin-bottom: 15px; }
+      footer .footer-outer .subscribe > * input {
+        background-color: #1A1A1A;
+        height: 25px;
+        margin-right: 10px; }
+      footer .footer-outer .subscribe > * button {
+        background-color: #434343;
+        border-radius: 3px;
+        text-transform: uppercase;
+        padding: 7px 17px;
+        border: none; }
+    footer .footer-outer .footer-img {
+      width: 350px;
+      height: 60px;
+      margin-bottom: 50px;
+      margin-right: 50px; }
+
+/*# sourceMappingURL=main.css.map */

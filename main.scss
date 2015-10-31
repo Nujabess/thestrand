@@ -1,0 +1,337 @@
+/*================Resets==============*/
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Roboto' sans-serif;
+	background-color: black;
+	overflow-x: hidden;
+	color: white;
+}
+
+ul{
+	list-style: none;
+	color: #fff;
+}
+
+li{
+	color: #fff;
+}
+
+
+img{
+	max-width: 100%;
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+}
+
+button{
+	color: #fff;
+}
+
+
+
+/*================Global Classes==============*/
+.container{
+	width: 80%;
+	margin: 0 auto;
+	color: #fff;
+}
+
+.row{
+	display: flex;
+}
+
+.center{
+	justify-content: center;
+}
+
+.column{
+	display: flex;
+	flex-direction: column;
+}
+
+.split{
+	justify-content: space-between;
+}
+
+.column-center{
+	align-items: center;
+}
+
+.row-reverse{
+	flex-direction: row-reverse;
+}
+
+.centerHold{
+	align-items:center;
+	align-content:center;
+}
+
+.bottom{
+	align-items: flex-end;
+}
+
+.col1-3{
+	width: 33.333%;
+}
+/*================Page Styles==============*/
+
+/* NAV BAR */
+.header-img{
+	position: relative;
+}
+
+.header-img {
+	ul {
+		font-size: .80em;
+		font-weight: 500;
+		text-transform: uppercase;
+		padding-top: 20px;
+		li {
+			padding: 0 10px;
+			letter-spacing: .7px;	
+			margin-right: 20px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+.cart {
+	font-size: .85em;
+	position: absolute;
+	right: 20px;
+	bottom: 0;
+	a {
+		margin-right: 4px;
+	} 
+	img{
+		height: 10px;
+		width: 15px;
+	}
+}
+
+/* END NAV BAR */
+
+/* SPLASH IMAGE*/
+.splash-wrap{
+	height: 530px;
+		.shop{
+			button{
+				margin-top: 250px;
+				background: #434343;
+				height: 35px;
+				width: 85px;
+				border: none;
+				text-transform: capitalize;
+				border-radius: 2px;
+				font-weight: 400;
+				font-size: .65em;
+				&:hover{
+					background: lighten(#434343, 5%);
+					 
+				}
+			}
+		}
+}
+.splash-img{
+	background: url(img/Hipster3.jpeg) no-repeat top;
+	background-size: cover;
+	height: 700px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	margin-top: 20%;
+}
+
+.cta{
+	background-color: rgba(47, 47, 50, .7);
+	font-family: 'Lobster Two', cursive;
+	width: 100vw;
+	margin-top: 200px;
+	span {
+		color: #fff;
+		font-size: 7.5em;
+	}
+	ul {
+		text-transform: uppercase;
+		margin-bottom: 20px;
+		li {
+			margin-right: 30px;
+			font-size: 1.3em;
+			color: #fff;
+		}
+	}
+
+}
+
+
+/* END SPLASH CONTENT */
+
+/* MAIN CONTENT */
+.main-content{
+	text-align: center;
+	text-transform: uppercase;
+	background-color: #1B1B1B;
+	width: 100%;
+	margin-left: 0;
+	color: #fff;
+	font-family: 'Hind', sans-serif;
+
+	h1 {
+		padding-top: 20px;
+		font-weight: 200;
+	}
+
+	h3{
+		margin-top: -10px;
+		margin-bottom: 10px;
+		font-weight: 200;
+		color: #6C6C6C;
+	}
+
+	ul{
+		margin-bottom: 10px;
+		text-align: center;
+
+		li {
+			font-size: .8em;
+			width: 100%;
+			color: #6C6C6C;
+		}
+	}
+}
+/*END MAIN CONTENT*/
+
+/*SHOP CONTENT*/
+.s-content{
+	background-color: #272727;
+	h3{
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		padding-top: 100px;
+		padding-bottom: 40px;
+	}
+}
+
+.img-wrap{
+	font: 'Hind', sans-serif;
+	background-color: #272727;
+	&>div{
+		max-width: 21%;
+		margin-right: 1%;
+		&:last-child{
+			margin-right: 0;
+		}
+		img:hover{
+			opacity: .8;
+		}
+	}
+}
+
+.img-content1{
+	ul{
+		li{
+			text-align: center;
+			padding: 5px 0;  
+			font-family: 'Hind', sans-serif;
+			text-transform: uppercase;
+			font-weight: 300;
+		}
+	}
+}
+
+/*END SHOP CONTENT*/
+
+/*INSTAGRAM CONTENT*/ 
+.img-outer{
+	background-color: #1B1B1B;
+}
+.img-inner{
+	margin: 0 auto;
+	width: 95%;
+}
+.ig-content{
+		background-color: #1B1B1B;
+	h3{
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: 400;
+		padding-top: 70px;
+		padding-bottom: 50px;
+	}
+}
+
+.ig-wrap{
+	background-color: #1B1B1B;
+	height: 150px;
+	margin-bottom: 15px;
+	&:last-child{
+		margin-bottom: 0;
+	}
+	&>img{
+		max-width: 15%;
+		margin-right: 1.4%;
+
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}
+
+/*END INSTAGRAM CONTENT*/
+
+footer{
+	padding-top: 40px;
+	background-color:#111;
+	font: 'Hind', sans-serif;	
+
+	h3{
+		margin-bottom: 15px;
+		font: 'Hind', sans-serif;
+		font-weight: 400;
+		font-size: 1.1em;
+		text-transform: uppercase;
+	}
+	.footer-outer{
+		width: 60%;
+		margin: 0 auto;
+		font-size: .85em;
+		
+		.subscribe{
+			&>*{
+				margin-bottom: 15px;
+				input{
+					background-color: #1A1A1A;
+					height: 25px;
+					margin-right: 10px;
+				}
+				button{
+					background-color: #434343;
+					border-radius: 3px;
+					text-transform: uppercase;
+					padding: 7px 17px;
+					border: none;
+				}
+			}
+		}
+		
+		.footer-img{
+			width: 350px;
+			height: 60px;
+			margin-bottom: 50px;
+			margin-right: 50px;
+		}
+	}
+}
